@@ -166,6 +166,19 @@
         <scope>provided</scope>
       </dependency>
 
+        <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>servlet-api</artifactId>
+    <version>2.5</version> <!-- or the version you need -->
+</dependency>
+
+<dependency>
+    <groupId>javax.servlet.jsp</groupId>
+    <artifactId>jsp-api</artifactId>
+    <version>2.1</version> <!-- or the version you need -->
+</dependency>
+        
+
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit-dep</artifactId>
