@@ -78,36 +78,10 @@
               <groupId>org.codehaus.mojo</groupId>
               <artifactId>taglist-maven-plugin</artifactId>
             </plugin>
-            <reporting>
-  <outputDirectory>${project.build.directory}/site</outputDirectory>
-  <plugins>
-    <plugin>
-      <artifactId>maven-checkstyle-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <artifactId>maven-jxr-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <artifactId>maven-javadoc-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <artifactId>maven-pmd-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <artifactId>maven-surefire-report-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <groupId>org.codehaus.mojo</groupId>
-      <artifactId>findbugs-maven-plugin</artifactId>
-    </plugin>
-    <plugin>
-      <groupId>org.codehaus.mojo</groupId>
-      <artifactId>taglist-maven-plugin</artifactId>
-    </plugin>
-  </plugins>
-</reporting>
-
           </reportPlugins>
+          <reporting>
+            <outputDirectory>${project.build.directory}/site</outputDirectory>
+          </reporting>
         </configuration>
       </plugin>
     </plugins>
@@ -179,7 +153,6 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- Use Jakarta EE only (replaces javax.*) -->
       <dependency>
         <groupId>jakarta.servlet</groupId>
         <artifactId>jakarta.servlet-api</artifactId>
