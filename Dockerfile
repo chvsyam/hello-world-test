@@ -1,5 +1,5 @@
 # Pull base image testing
-From tomcat:8-jre8 
+From tomcat:9-jre21
 
 # Maintainer 
 MAINTAINER "chv.syamkumar@gmail.com" 
